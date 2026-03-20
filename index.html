@@ -1,38 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Anime</title>
-    <style>
-        body {
-            background-image: url('thumb-1920-833315.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            color: white;
-            font-family: Algerian;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anime World</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+}
+
+/* Navbar */
+nav {
+    background: #111;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00ffcc;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background: url('https://wallpapercave.com/wp/wp5128415.jpg') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 60px;
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Content */
+.container {
+    padding: 40px;
+    text-align: center;
+}
+
+.card {
+    background: #1a1a1a;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+</style>
+
 </head>
 
 <body>
 
-<h1 style="text-align:center;">
-<marquee behavior="alternate">ANIME</marquee>
-</h1>
+<!-- Navbar -->
+<nav>
+    <a href="#">Home</a>
+    <a href="#about">About Anime</a>
+    <a href="#genres">Genres</a>
+</nav>
 
-<p>
-"Anime" refers to a style of animation originating in Japan, characterized by distinct visual aesthetics, expressive characters, and vibrant colors.
-</p>
+<!-- Hero -->
+<section class="hero">
+    <h1>Welcome to Anime World 🎌</h1>
+</section>
 
-<h2>Origin and Meaning:</h2>
-<p>The word "anime" comes from "animation".</p>
+<!-- About -->
+<section class="container" id="about">
+    <h2>What is Anime?</h2>
+    <div class="card">
+        <p>
+        Anime is a style of animation that originated in Japan. It is known for its colorful artwork, unique characters, and emotional storytelling.
+        </p>
+        <p>
+        Popular anime includes shows like Naruto, One Piece, and Attack on Titan.
+        </p>
+    </div>
+</section>
 
-<h2>Genres:</h2>
-<a href="MARTIAL ARTS.HTML">Martial Art</a>,
-<a href="">Horror</a>,
-<a href="">Sci-Fi</a>,
-<a href="">Romance</a>,
-<a href="">Suspense</a>,
-<a href="ISEKAI.HTML">Isekai</a>
+<!-- Genres -->
+<section class="container" id="genres">
+    <h2>Popular Genres</h2>
+
+    <div class="card">
+        <h3>Action</h3>
+        <p>Fighting, adventure, and intense battles.</p>
+    </div>
+
+    <div class="card">
+        <h3>Romance</h3>
+        <p>Love stories and emotional connections.</p>
+    </div>
+
+    <div class="card">
+        <h3>Fantasy</h3>
+        <p>Magic, supernatural worlds, and imagination.</p>
+    </div>
+
+    <div class="card">
+        <h3>Isekai</h3>
+        <p>Characters transported to another world.</p>
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Anime World | Made by Sayan</p>
+</footer>
 
 </body>
 </html>
